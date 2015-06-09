@@ -3,6 +3,8 @@ name = gets.chomp
 puts "Hi #{name}"
 
 puts "How old are you?"
-age = gets.chomp
-birth_year = 2015 - age.to_i
+age = gets.chomp.to_i
+date = Time.new
+
+birth_year = date.year - age
 puts "You were born in #{birth_year}"
